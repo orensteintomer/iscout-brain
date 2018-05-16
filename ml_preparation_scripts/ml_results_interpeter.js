@@ -150,7 +150,7 @@ const calculate_distances = (tree, numberOfSamples) => {
 
 // Gets ml clustering results
 dbConn.query(`SELECT idx1, idx2, distance, sample_count, merge_id
-              FROM iscout.clustring_results2
+              FROM iscout.clustring_results
               order by merge_id desc`, (err, data) => {
 
     if (err) {
