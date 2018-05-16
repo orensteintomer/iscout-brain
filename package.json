@@ -1,5 +1,5 @@
 {
-  "name": "tem-jobs-api",
+  "name": "iscout-brain",
   "private": true,
   "version": "0.1.1",
   "main": "index.js",
@@ -26,13 +26,20 @@
     "good-requests-filter": "^0.1.0",
     "good-separator": "^0.1.0",
     "good-squeeze": "^4.0.0",
+    "hapi": "^14.2.0",
+    "hapi-alive": "^1.4.0",
+    "hapi-swagger": "^7.0.1",
     "inert": "^4.0.2",
     "joi": "^9.0.4",
     "mysql": "^2.15.0",
-    "tree-model": "^1.0.7",
+    "mysql2": "^1.5.2",
+    "promise-mysql": "^3.2.1",
+    "request": "^2.74.0",
     "underscore": "^1.8.3",
+    "util.promisify": "^1.0.0",
     "uuid": "^2.0.2",
-    "vision": "^4.1.0"
+    "vision": "^4.1.0",
+	"tree-model": "^1.0.7"
   },
   "devDependencies": {
     "code": "^3.0.2",

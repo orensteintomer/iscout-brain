@@ -1,7 +1,7 @@
 /**
  * Created by Tomer on 16-May-18.
  */
-const models = require('../models');
+const models = require('../lib/models');
 const _ = require('underscore');
 const treeModel = require('tree-model');
 const tree = new treeModel();
