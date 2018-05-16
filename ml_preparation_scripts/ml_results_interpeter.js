@@ -120,7 +120,7 @@ const calculate_distances = (tree, numberOfSamples) => {
     let distances = [];
 
     for (let i = 0; i < numberOfSamples; i++) {
-        for (let j = i + 1; j < numberOfSamples; j++) {
+        for (let j = 0; j < numberOfSamples; j++) {
             let idx1 = i;
             let idx2 = j;
 
@@ -134,8 +134,8 @@ const calculate_distances = (tree, numberOfSamples) => {
 
             // Pushes
             distances.push([
-                idx1,
-                idx2,
+                idx1 + 1,
+                idx2 + 1,
                 currentDistance
             ]);
         }
@@ -180,6 +180,7 @@ dbConn.query(`SELECT idx1, idx2, distance, sample_count, merge_id
                 console.log(err);
             } else {
                 console.log('Finished!!!');
+                process.exit();
             }
         });
     }
